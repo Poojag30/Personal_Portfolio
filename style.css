@@ -639,7 +639,7 @@ footer{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     } 
-    .services .serv-content .card{
+    .projects .pro-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }  
@@ -660,7 +660,7 @@ footer{
     .Education .serv-content .card{
         width: 100%;
     }
-    .services .serv-content .card{
+    .projects .pro-content .card{
         width: 100%;
     }
 }
