@@ -12,16 +12,16 @@ html{
 }
 /* custom scroll bar */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #8c55bd;
+    background:#e6d58d;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #8c55bd;
+    background: #e6d58d;
 }
 /* all similar content styling codes */
 section{
@@ -33,11 +33,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .Education, .skills,.contact, footer{
+.about, .projects, .Education, .skills,.contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .serv-content,
+.projects .pro-content,
 .Education .edu-content,
 .skills .skills-content,
 .contact .contact-content{
@@ -80,9 +80,10 @@ section .title::after{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 30px 0;
+    padding: 12px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
+    background-color:#e6d58d;
 }
 .navbar.sticky{
     padding: 15px 0;
@@ -315,11 +316,12 @@ section .title::after{
     color:#8c55bd;
   }
 /* project section styling */
-.services .title::before,
-.teams .title::before{
+.projects .title::before,
+.teams .title::before {
     background: black;
 }
-.services .serv-content .card{
+
+.projects .pro-content .card {
     width: calc(33% - 20px);
     background: #e6d58d;
     text-align: center;
@@ -328,40 +330,48 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
+
+.projects .pro-content .card:hover {
     background: #8c55bd;
 }
-.services .serv-content .card .box{
+
+.projects .pro-content .card .box {
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+
+.projects .pro-content .card:hover .box {
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+
+.projects .pro-content .card i {
     font-size: 50px;
     color: #8c55bd;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+
+.projects .pro-content .card:hover i {
     color: #fff;
 }
-.services .serv-content .card .text{
+
+.projects .pro-content .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.services .section__text__p1 {
+
+.projects .section__text__p1 {
     text-align: center;
     color: #333;
     font-size: 24px;
     font-weight: bold;
-  }
-   .services .title {
+}
+
+.projects .title {
     text-align: center;
     margin-top: 20px;
     font-size: 36px;
-    color:#8c55bd;
-  }
+    color: #8c55bd;
+}
 
   .view-demo-btn {
     display: inline-block;
@@ -551,18 +561,12 @@ section .title::after{
 }
 /* footer section styling */
 footer{
-    background:#8c55bd;
-    padding: 15px 23px;
-    color: rgb(247, 239, 239);
+    background:#e6d58d;
+    padding: 8px 15px;
+    color: #8c55bd;
     text-align: center;
 }
-footer span a{
-    color: #8c55bd;
-    text-decoration: none;
-}
-footer span a:hover{
-    text-decoration: underline;
-}
+
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
