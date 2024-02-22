@@ -84,6 +84,7 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
     background-color:#e6d58d;
+
 }
 .navbar.sticky{
     padding: 15px 0;
@@ -99,6 +100,11 @@ section .title::after{
     font-size: 35px;
     font-weight: 600;
 }
+.logo {
+    width: 100px; 
+    height: auto; 
+}
+
 .navbar.sticky .logo a span{
     color: #fff;
 }
@@ -159,14 +165,15 @@ section .title::after{
     display: flex;
     align-items: center; 
     justify-content: center; 
-    background: #e6d58d;
+    background: #e6d58d; 
     height: 100vh;
     color: #fff;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
-}
+}  
+ 
 .home .max-width {
     width: 100%;
     display: flex;
@@ -213,6 +220,8 @@ section .title::after{
     color:#8c55bd;
     background: none;
 }
+
+ 
 /* about section styling */
 .about .about-content .left{
     width: 45%;
@@ -308,19 +317,36 @@ section .title::after{
     font-size: 24px;
     font-weight: bold;
   }
- 
-  .Education .title {
+   .Education .title {
     text-align: center;
     margin-top: 20px;
     font-size: 36px;
     color:#8c55bd;
   }
+  .Education {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Education .max-width {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+.title img {
+    vertical-align: middle; 
+    margin-left: 10px; 
+}
+
+
+
 /* project section styling */
 .projects .title::before,
 .teams .title::before {
     background: black;
 }
-
 .projects .pro-content .card {
     width: calc(33% - 20px);
     background: #e6d58d;
@@ -330,49 +356,40 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
 .projects .pro-content .card:hover {
     background: #8c55bd;
 }
-
 .projects .pro-content .card .box {
     transition: all 0.3s ease;
 }
-
 .projects .pro-content .card:hover .box {
     transform: scale(1.05);
 }
-
 .projects .pro-content .card i {
     font-size: 50px;
     color: #8c55bd;
     transition: color 0.3s ease;
 }
-
 .projects .pro-content .card:hover i {
     color: #fff;
 }
-
 .projects .pro-content .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-
 .projects .section__text__p1 {
     text-align: center;
     color: #333;
     font-size: 24px;
     font-weight: bold;
 }
-
 .projects .title {
     text-align: center;
     margin-top: 20px;
     font-size: 36px;
     color: #8c55bd;
 }
-
   .view-demo-btn {
     display: inline-block;
     padding: 9px 14px; 
@@ -482,6 +499,20 @@ section .title::after{
 .contact .contact-content .left .icons{
     margin: 10px 0;
 }
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column.left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .contact .contact-content .row{
     display: flex;
     height: 65px;
@@ -559,6 +590,15 @@ section .title::after{
   color: #8c55bd;
   background: none;
 }
+.gif-area {
+    margin-top: 20px;
+}
+
+.gif-area img {
+    width: 90px;
+    height: auto;
+}
+
 /* footer section styling */
 footer{
     background:#e6d58d;
@@ -639,7 +679,7 @@ footer{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     } 
-    .projects .pro-content .card{
+    .services .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }  
@@ -660,7 +700,7 @@ footer{
     .Education .serv-content .card{
         width: 100%;
     }
-    .projects .pro-content .card{
+    .services .serv-content .card{
         width: 100%;
     }
 }
