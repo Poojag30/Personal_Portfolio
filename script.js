@@ -15,6 +15,13 @@ $(document).ready(function(){
         }
     });
 
+$(document).ready(function(){
+    // Toggle between dark and light themes
+    $('.theme-toggle').click(function(){
+        $('body').toggleClass('dark-theme');
+        $('.theme-toggle i').toggleClass('fa-sun fa-moon'); // Toggle icon
+    });
+});
     // slide-up script
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
@@ -27,11 +34,5 @@ $(document).ready(function(){
         $('html').css("scrollBehavior", "smooth");
     });
 
-    // toggle menu/navbar script
-    $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
-    });
 
-    
-    
+
