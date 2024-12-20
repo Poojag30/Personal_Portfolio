@@ -33,11 +33,12 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .projects, .Education, .skills,.contact, footer{
+.about, .projects, .Education, .Experience, .skills,.contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .projects .pro-content,
+.Experience .exp-content,
 .Education .edu-content,
 .skills .skills-content,
 .contact .contact-content{
@@ -221,10 +222,7 @@ section .title::after{
     background: none;
 }
 
- 
   
-
-
 /* about section styling */
 .about .about-content .left{
     width: 45%;
@@ -479,6 +477,73 @@ section .title::after{
     font-weight: bold;
     color: #333;
   }
+
+/*Experience*/
+.Experience .title::before,
+.teams .title::before{
+    background: black;
+}
+.Experience .exp-content .card{
+    width: calc(33% - 20px);
+    background: #e6d58d;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.Experience .exp-content .card:hover{
+    background:#8c55bd;
+}
+.Experience .exp-content .card .box{
+    transition: all 0.3s ease;
+}
+.Experience .exp-content .card:hover .box{
+    transform: scale(1.05);
+}
+.Experience .exp-content .card i{
+    font-size: 50px;
+    color: #8c55bd;
+    transition: color 0.3s ease;
+}
+.Experience .exp-content .card:hover i{
+    color: #fff;
+}
+.Experience .exp-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.Experience .section__text__p1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+  }
+   .Experience .title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 36px;
+    color:#8c55bd;
+  }
+  .Experience {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Experience .max-width {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+.title img {
+    vertical-align: middle; 
+    margin-left: 10px; 
+}
+
+
 /* contact section styling */
 .contact .section__text__p1 {
     text-align: center;
@@ -686,6 +751,12 @@ footer{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     } 
+
+    .Experience .exp-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    } 
+
     .projects .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
@@ -705,6 +776,9 @@ footer{
         font-size: 20px;
     }
     .Education .serv-content .card{
+        width: 100%;
+    }
+    .Experience .serv-content .card{
         width: 100%;
     }
     .projects .serv-content .card{
